@@ -59,7 +59,7 @@ const createDots = function(){
 }
 
 function startSlideshow() {
-    setInterval(() => {
+    slideshowTimer = setInterval(() => {
         currentPageIndex = (currentPageIndex + 1) % images.length;
         displayImage(currentPageIndex);
     }, 5000);
